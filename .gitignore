@@ -1,0 +1,11 @@
+# IDEA
+.idea
+
+# VENV
+.venv
+
+# sqlite3
+db.sqlite3
+
+# ENV
+.env

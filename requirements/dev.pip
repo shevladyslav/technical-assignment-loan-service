@@ -1,0 +1,2 @@
+isort==7.0.0        # A Python utility / library to sort Python imports.
+black==25.12.0      # The uncompromising code formatter.
