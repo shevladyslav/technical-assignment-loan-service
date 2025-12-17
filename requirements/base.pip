@@ -1,3 +1,6 @@
 Django==5.2.9                   # A high-level Python web framework that encourages rapid development and clean, pragmatic design.
 djangorestframework==3.16.1     # Web APIs for Django, made easy.
 python-dotenv==1.2.1            # Read key-value pairs from a .env file and set them as environment variables
+python-dateutil==2.9.0          # Extensions to the standard Python datetime module
+pytest==9.0.2                   # pytest: simple powerful testing with Python
+pytest-django==4.11.1           # A Django plugin for pytest.
