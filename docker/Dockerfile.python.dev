@@ -1,0 +1,11 @@
+FROM python:3.12.3
+
+WORKDIR /app
+
+COPY requirements/ /app/
+
+RUN pip install -r local.pip
+
+COPY . /app/
+
+EXPOSE 8000

@@ -1,0 +1,11 @@
+services:
+
+  django:
+    build:
+      context: ..
+      dockerfile: ./docker/Dockerfile.python.dev
+    volumes:
+      - ..:/app
+    command: sh -c "python src/manage.py migrate && python src/manage.py runserver 0.0.0.0:8000"
+    ports:
+      - "8000:8000"
