@@ -1,4 +1,5 @@
 import os
+import sys
 from pathlib import Path
 
 from dotenv import load_dotenv
@@ -6,6 +7,9 @@ from dotenv import load_dotenv
 load_dotenv()
 
 BASE_DIR = Path(__file__).resolve().parent.parent
+
+# Add src/ to PYTHONPATH so imports like apps.*, settings.*, etc. work correctly
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 SECRET_KEY = os.getenv("DJANGO_SECRET_KEY")
 
@@ -22,6 +26,8 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     # third-party packages
     "rest_framework",
+    # django apps
+    "apps.loan_schedules",
 ]
 
 MIDDLEWARE = [
